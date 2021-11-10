@@ -1,0 +1,42 @@
+// TIPOGRAFIA
+
+$normal: normal;
+
+$cursiva: italic;
+
+$negrita: bold;
+
+
+.negrita {
+    font-weight: bold;
+}
+
+.textoGrande {
+    font-size: 40px;
+}
+
+.textoRelativo {
+    font-size: 200%;
+}
+
+.impact {
+    font-family: "Impact";
+}
+
+.chiquito {
+    max-height: 50%;
+    max-width: 50%;
+    text-align: center;
+}
+
+.centrar {
+    text-align: center;
+}
+
+.justificado {
+    text-align: justify;
+}
+
+.aLaDerecha {
+    text-align: right;
+}
