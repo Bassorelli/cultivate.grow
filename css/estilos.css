@@ -1,4 +1,36 @@
 /* esto es un comentario css */
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  gap: 20px 0px;
+  grid-auto-flow: row;
+  grid-template-areas: "producto_1 producto_2" "producto_3 producto_4" "producto_5 producto_6" "producto_7 producto_8"; }
+
+.producto_1 {
+  grid-area: producto_1; }
+
+.producto_2 {
+  grid-area: producto_2; }
+
+.producto_3 {
+  grid-area: producto_3; }
+
+.producto_4 {
+  grid-area: producto_4; }
+
+.producto_5 {
+  grid-area: producto_5; }
+
+.producto_6 {
+  grid-area: producto_6; }
+
+.producto_7 {
+  grid-area: producto_7; }
+
+.producto_8 {
+  grid-area: producto_8; }
+
 .negrita {
   font-weight: bold; }
 
@@ -29,7 +61,8 @@
   width: 100%; }
 
 .carousel_2 {
-  width: 50%; }
+  width: 100%;
+  height: auto; }
 
 h1 {
   font-size: 2.5rem; }
@@ -185,12 +218,10 @@ table {
 
 /* GRIDS */
 .container {
-  border: solid 2px black;
-  padding: 2px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr;
-  gap: 0px 0px;
+  gap: 20px 20px;
   grid-auto-flow: row;
   grid-template-areas: "producto_1 producto_2" "producto_3 producto_4" "producto_5 producto_6" "producto_7 producto_8"; }
 
@@ -222,10 +253,10 @@ table {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
-  gap: 0px 0px;
-  border: 1px; }
+  gap: 20px 20px;
+  grid-auto-flow: row; }
 
-.Producto_A {
+.producto_A {
   grid-area: 1 / 1 / 2 / 4; }
 
 .producto_B {
@@ -234,27 +265,32 @@ table {
 .producto_C {
   grid-area: 2 / 2 / 3 / 3; }
 
-.Producto_E {
+.producto_E {
   grid-area: 2 / 3 / 3 / 4; }
 
-.producto_A {
-  grid-area: 1 / 1 / 2 / 4; }
+.producto_D {
+  grid-area: 2 / 3 / 3 / 4; }
+
+.producto_F {
+  grid-area: 3 / 2 / 4 / 3; }
+
+.producto_G {
+  grid-area: 3 / 3 / 4 / 4; }
+
+.producto_e {
+  grid-area: 3 / 1 / 4 / 2; }
 
 /*FIN DE GRIDS */
 .producto_A {
   width: 100%;
+  height: auto;
   border: 1px; }
 
 .producto_B {
-  width: 412px; }
+  width: auto; }
 
 .producto_C {
-  width: 477px; }
-
-.centrar_Carousel {
-  display: flex;
-  text-align: center;
-  display: center; }
+  width: auto; }
 
 /* OTROS */
 .normal {
@@ -289,3 +325,6 @@ table {
 
 .aLaDerecha {
   text-align: right; }
+
+.ancho {
+  width: 100%; }
