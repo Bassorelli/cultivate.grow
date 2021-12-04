@@ -1,0 +1,506 @@
+// esto es un comentari scss
+/* esto es un comentario css */
+
+// IMPORT 
+@import "colores";
+@import "estructuras";
+@import "variable";
+@import "texto";
+
+
+// VARIABLES
+
+$negro: black;
+$verde: green;
+$rojo: red;
+$azul: blue;
+$amarillo: yellow;
+
+$normal: normal;
+$cursiva: italic;
+$negrita: bold;
+
+
+$ancho: 100%;
+$largo_25:25%; 
+
+// OPERACION PARA EL DESAFIO
+
+
+
+
+// MAPS
+
+$colores: (
+    /*clave: valor */
+    twitter:   #55acee,
+    facebook:  #3a5795,
+    mail:      #C25E30,
+    instagram: purple,
+    youtube:   red,
+    snapchat:  yellow,
+);
+
+
+@keyframes aparecer {
+    0% {
+    opacity: 0;
+    }
+    100% {
+    opacity: 1;
+    }
+}
+
+
+
+
+// ANIDAMIENTO
+
+*{
+    text-decoration: none;
+}
+
+
+h1 {
+    font-family: "Bebas Neue";
+    -webkit-animation-duration: 2s;
+    animation-duration: 2s;
+    -webkit-animation-name: aparecer;
+    animation-name: aparecer;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(red), to(yellow));
+    background-image: linear-gradient(red, yellow);
+}
+
+h3 {
+    color: blanchedalmond;
+    font-family: "Bebas Neue";
+    -webkit-animation-duration: 2s;
+    animation-duration: 2s;
+    -webkit-animation-name: aparecer;
+    animation-name: aparecer;
+    background-color: rgb(3, 1, 1);
+}
+
+img:hover {
+    color: rgba(251, 251, 251, 0.972);
+    font-family: "Bebas Neue";
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+header {
+    height: 50vh;
+}
+
+footer {
+    background-color: #010c09cc;
+    height: 200%;
+    color: #fff;
+    text-align: center;
+}
+
+p {
+    color: white;
+}
+
+table {
+    padding: 2px;
+    -webkit-box-pack: stretch;
+    -ms-flex-pack: stretch;
+    justify-content: stretch;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+
+// MENU 
+/* MENU */
+
+.menu {
+    max-width: 1200px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 1250px;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+.menu li {
+    list-style: none;
+    font-family: "Roboto";
+    color: white;
+}
+
+.menu li a {
+    color: white;
+    list-style: none;
+    text-decoration: none;
+}
+
+.buscador {
+    height: 50px;
+}
+
+.bienvenido {
+    color: #f5f109;
+    font-family: "Bebas Neue";
+}
+
+.imagenFondo {
+    background-image: url("https://64.media.tumblr.com/dabf94521a6fecd6a37f27036c0e5336/4ad0193310348e5c-59/s1280x1920/5d58baf83921271f7283fd9cf3e52e9c0f0d55bb.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    border: solid 1px white;
+}
+
+.registro {
+    background-color: #010c09cc;
+}
+
+.roboto {
+    font-family: "Roboto";
+}
+
+.bebasNeue {
+    font-family: "Bebas Neue";
+}
+
+.margenes iframe {
+    margin-left: 500px;
+}
+
+.imagenes {
+    max-width: 100%;
+    max-height: 25%;
+}
+
+.padding {
+    padding: 30px 0px 100px 50px;
+}
+
+.contenedor-flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: row-reverse;
+    flex-direction: row-reverse;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-ordinal-group: 0;
+    -ms-flex-order: -1;
+    order: -1;
+}
+
+
+// GRIDS 
+/* GRIDS */
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 20px 20px;
+    grid-auto-flow: row;
+    grid-template-areas: "producto_1 producto_2" "producto_3 producto_4" "producto_5 producto_6" "producto_7 producto_8";
+}
+
+.producto_1 {
+    grid-area: producto_1;
+}
+
+.producto_2 {
+    grid-area: producto_2;
+}
+
+.producto_3 {
+    grid-area: producto_3;
+}
+
+.producto_4 {
+    grid-area: producto_4;
+}
+
+.producto_5 {
+    grid-area: producto_5;
+}
+
+.producto_6 {
+    grid-area: producto_6;
+}
+
+.producto_7 {
+    grid-area: producto_7;
+}
+
+.producto_8 {
+    grid-area: producto_8;
+}
+
+.container_2 {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 1fr 1fr 1fr;
+	gap: 20px 20px;
+	grid-auto-flow: row;
+}
+.producto_A {
+	grid-area: 1 / 1 / 2 / 4;
+}
+.producto_B {
+	grid-area: 2 / 1 / 3 / 2;
+}
+.producto_C {
+	grid-area: 2 / 2 / 3 / 3;
+}
+.producto_E {
+	grid-area: 2 / 3 / 3 / 4;
+}
+.producto_D {
+	grid-area: 2 / 3 / 3 / 4;
+}
+.producto_F {
+	grid-area: 3 / 2 / 4 / 3;
+}
+.producto_G {
+	grid-area: 3 / 3 / 4 / 4;
+}
+.producto_e {
+	grid-area: 3 / 1 / 4 / 2;
+}
+
+
+/*FIN DE GRIDS */
+
+.producto_A {
+    width: $ancho;
+    height: auto;
+    border: 1px;
+}
+
+
+
+  /* OTROS */
+
+.normal {
+    font-style: normal;
+    font-weight: normal;
+}
+
+.cursiva {
+    font-style: italic;
+}
+
+.negrita {
+    font-weight: bold;
+}
+
+.textoGrande {
+    font-size: 40px;
+}
+
+.textoRelativo {
+    font-size: 200%;
+}
+
+.impact {
+    font-family: "Impact";
+}
+
+.chiquito {
+    max-height: 50%;
+    max-width: 50%;
+    text-align: center;
+}
+
+.centrar {
+    text-align: center;
+}
+
+.justificado {
+    text-align: justify;
+}
+
+.aLaDerecha {
+    text-align: right;
+}
+
+.ancho {
+    width: 100%;
+}
+
+@media screen and (max-width: 812px){
+    .container_2 {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        gap: 10px 0px;
+        grid-auto-flow: row;
+        grid-template-areas: "producto_A" "producto_B" "producto_C" "producto_D" "producto_e" "producto_F" "producto_G";
+    }
+    .producto_A {
+        grid-area: producto_A;
+    }
+    .producto_B {
+        grid-area: producto_B;
+    }
+    .producto_C {
+        grid-area: producto_C;
+    }
+    .producto_D {
+        grid-area: producto_D;
+    }
+    .producto_e {
+        grid-area: producto_e;
+    }
+    .producto_F {
+        grid-area: producto_F;
+    }
+    .producto_G {
+        grid-area: producto_G;
+    }
+    
+
+    .container_2  .producto_A{ width: 375px;
+        height: 375px;
+
+}
+
+
+.container_2  .producto_B{ width: 375px;
+    height: 375px;
+
+}
+
+
+.container_2  .producto_C{ width: 375px;
+    height: 375px;
+
+}
+
+
+.container_2  .producto_D{ width: 375px;
+    height: 375px;
+
+}
+
+.container_2  .producto_e{ width: 375px;
+    height: 375px;
+
+}
+
+
+.container_2  .producto_F{ width: 375px;
+    height: 375px;
+
+}
+
+
+.container_2  .producto_G{ width: 375px;
+    height: 375px;
+
+}
+
+img {
+    width: 375px;
+}
+body {
+    height: 500%;
+}
+
+footer iframe {
+    width: 375px;
+}
+
+video {
+    width: 375px;
+}
+
+.container { 
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+	gap: 10px 0px;
+	grid-auto-flow: row;
+	grid-template-areas: "producto_1" "producto_2" "producto_3" "producto_4" "proucto_5" "producto_6" "producto_7" "producto_8";
+}
+.producto_1 {
+	grid-area: producto_1;
+}
+.producto_2 {
+	grid-area: producto_2;
+}
+.producto_3 {
+	grid-area: producto_3;
+}
+.producto_4 {
+	grid-area: producto_4;
+}
+.producto_5 {
+	grid-area: proucto_5;
+}
+.producto_6 {
+	grid-area: producto_6;
+}
+.producto_7 {
+	grid-area: producto_7;
+}
+.producto_8 {
+	grid-area: producto_8;
+}
+
+
+.container  .producto_1{ width: 350px;
+    height: 375px;
+}
+
+.container  .producto_2{ width: 350px;
+        height: 375px;
+}
+
+.container  .producto_3{ width: 350px;
+    height: 375px;
+}
+
+
+.container  .producto_4{ width: 350px;
+    height: 375px;
+}
+
+
+.container  .producto_5{ width: 350px;
+    height: 375px;
+}
+
+
+.container  .producto_6{ width: 350px;
+    height: 375px;
+}
+
+
+
+.container  .producto_7{ width: 350px;
+    height: 375px;
+}
+
+
+.container  .producto_8{ width: 350px;
+    height: 375px;
+}
+
+
+}
+
